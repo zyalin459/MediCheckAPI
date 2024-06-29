@@ -1,5 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const morgan = require("morgan");
 
 // Route files
 const clinics = require("./routes/clinics");
@@ -8,6 +9,12 @@ const clinics = require("./routes/clinics");
 dotenv.config({ path: "./config/config.env" });
 
 const app = express();
+
+// Middleware, routers below can access to it
+// Dev logging middleware
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
 
 // Moute routes
 app.use("/api/v1/clinics", clinics);
