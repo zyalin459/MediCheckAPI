@@ -1,40 +1,83 @@
+const Clinic = require("../models/Clinic");
 // @desc        Get all clinics
 // @route       GET /api/v1/clinics
 // @access      Public
-exports.getClinics = (req, res, next) => {
-  res.status(200).json({ success: true, message: "Show all clinics" });
+exports.getClinics = async (req, res, next) => {
+  try {
+    const clinics = await Clinic.find();
+    res.status(200).json({
+      success: true,
+      size: clinics.length,
+      data: clinics,
+    });
+  } catch (error) {
+    res.status(400).json({ success: false, message: { error } });
+  }
 };
 
 // @desc        Get sinble clinic
 // @route       GET /api/v1/clinics/:id
 // @access      Public
-exports.getClinic = (req, res, next) => {
-  res
-    .status(200)
-    .json({ success: true, message: `Show clinic ${req.params.id}` });
+exports.getClinic = async (req, res, next) => {
+  try {
+    const clinic = await Clinic.findById(req.params.id);
+    res.status(200).json({ success: true, data: clinic });
+
+    if (!clinic) {
+      return res.status(400).json({ success: false });
+    }
+  } catch (error) {
+    res.status(400).json({ success: false, message: error });
+  }
 };
 
 // @desc        Create new clinic
 // @route       POST /api/v1/clinics
 // @access      Private
-exports.createClinic = (req, res, next) => {
-  res.status(200).json({ success: true, message: "Create new clinics" });
+exports.createClinic = async (req, res, next) => {
+  try {
+    const clinic = await Clinic.create(req.body);
+
+    res.status(201).json({
+      success: true,
+      data: clinic,
+    });
+  } catch (error) {
+    res.status(400).json({ success: false, message: { error } });
+  }
 };
 
 // @desc        Update clinic
 // @route       PUT /api/v1/clinics/:id
 // @access      Private
-exports.updateClinic = (req, res, next) => {
-  res
-    .status(200)
-    .json({ success: true, message: `Update clinic ${req.params.id}` });
+exports.updateClinic = async (req, res, next) => {
+  try {
+    const clinic = await Clinic.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json({ success: true, data: clinic });
+
+    if (!clinic) {
+      return res.status(400).json({ success: false });
+    }
+  } catch (error) {
+    res.status(400).json({ success: false, message: { error } });
+  }
 };
 
 // @desc        Delete clinic
 // @route       DELETE /api/v1/clinics/:id
 // @access      Private
-exports.deleteClinic = (req, res, next) => {
-  res
-    .status(200)
-    .json({ success: true, message: `Delete clinic ${req.params.id}` });
+exports.deleteClinic = async (req, res, next) => {
+  try {
+    const clinic = await Clinic.findByIdAndDelete(req.params.id);
+    res.status(200).json({ success: true, data: {} });
+
+    if (!clinic) {
+      return res.status(400).json({ success: false });
+    }
+  } catch (error) {
+    res.status(400).json({ success: false });
+  }
 };

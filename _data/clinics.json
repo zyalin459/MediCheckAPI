@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "MemorialCare",
+    "description": "MemorialCare prioritizesevery woman's physical and emotional health throughout every stage of her life. That's why offering comprehensive women's health services and a women's health services patient navigator in a place designed with women in mind - the Women's Health Pavilion in Laguna Hills. Women take care of so many, and we consider it an honor to take care of you.",
+    "website": "https://www.memorialcare.org/services/womens-care",
+    "phone": "(111) 111-1111",
+    "email": "enroll@devworks.com",
+    "address": "2801 Atlantic Avenue, Long Beach, CA 90806",
+    "cares": ["Primary Care", "Women's Care", "Surgery Care", "Cancer Care"],
+    "member": false
+  },
+  {
+    "id": "2",
+    "name": "Tia",
+    "description": "Tia is a comprehensive healthcare provider for women, offering both virtual and in-person appointments. Their services focus on physical, mental, and reproductive health, providing personalized care through a collaborative team approach. Tia emphasizes accessible and affordable healthcare, with membership perks including unlimited messaging with the care team, flexible appointments, and community workshops. The care model is relationship-based, ensuring integrated and in-sync management of health needs.",
+    "website": "https://asktia.com/",
+    "phone": "646-650-5337",
+    "email": "sayhello@asktia.com",
+    "address": "1417 2nd Street, Unit D, Santa Monica, CA 90401",
+    "cares": ["Primary Care", "Women's Care", "Wellness", "Mental Care"],
+    "member": true
+  }
+]
