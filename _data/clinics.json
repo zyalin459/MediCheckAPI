@@ -7,16 +7,24 @@
     "phone": "(111) 111-1111",
     "email": "enroll@devworks.com",
     "address": "2801 Atlantic Avenue, Long Beach, CA 90806",
+    "locations": ["Los Angeles Area"],
     "cares": ["Primary Care", "Women's Care", "Surgery Care", "Cancer Care"],
     "member": false
   },
   {
     "id": "2",
     "name": "Tia",
-    "description": "Tia is a comprehensive healthcare provider for women, offering both virtual and in-person appointments. Their services focus on physical, mental, and reproductive health, providing personalized care through a collaborative team approach. Tia emphasizes accessible and affordable healthcare, with membership perks including unlimited messaging with the care team, flexible appointments, and community workshops. The care model is relationship-based, ensuring integrated and in-sync management of health needs.",
+    "description": "Tia is a comprehensive healthcare provider for women, offering both virtual and in-person appointments. Tia emphasizes accessible and affordable healthcare, with membership perks including unlimited messaging with the care team, flexible appointments, and community workshops. The care model is relationship-based, ensuring integrated and in-sync management of health needs.",
     "website": "https://asktia.com/",
     "phone": "646-650-5337",
     "email": "sayhello@asktia.com",
+    "locations": [
+      "Los Angeles Area",
+      "San Francisco",
+      "New York",
+      "Brroklyn",
+      "Scottsdale"
+    ],
     "address": "1417 2nd Street, Unit D, Santa Monica, CA 90401",
     "cares": ["Primary Care", "Women's Care", "Wellness", "Mental Care"],
     "member": true

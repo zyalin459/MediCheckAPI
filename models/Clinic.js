@@ -58,6 +58,18 @@ const ClinicSchema = new mongoose.Schema(
       zipcode: String,
       country: String,
     },
+    locations: {
+      type: [String],
+      required: true,
+      enum: [
+        "Los Angeles Area",
+        "Los Angeles Area",
+        "San Francisco",
+        "New York",
+        "Brroklyn",
+        "Scottsdale",
+      ],
+    },
     cares: {
       // Array of strings
       type: [String],
