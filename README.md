@@ -5,7 +5,7 @@ A medical checkup packages management API. Inlcudes CRUD functionality of clinic
 `npm i ...`
 - `express`
 - `nodemon`  port watching
-- `dotenv`
+- `dotenv`  can access `process.env`
 - `morgan`  middleware
 - `mongoose` cloud MongoDB database connection
 - `colors` custormize console.log output style
