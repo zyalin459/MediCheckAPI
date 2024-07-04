@@ -18,6 +18,8 @@ A medical checkup packages management API. Inlcudes CRUD functionality of clinic
 
 # URL structur
 
+(All GET request are public, and private otherwise)
+
 - /api/v1//clinics
   - GET Show all clinics, public
   - POST Add new clinic to the database, private
@@ -32,4 +34,9 @@ A medical checkup packages management API. Inlcudes CRUD functionality of clinic
 - /api/v1/services
   - GET services
 - /api/v1/clinics/:id/services
-  - GET show services for clinic of {id}
+  - GET show services for clinic
+  - POST create service for clinic
+- /api/v1/clinics/:id
+  - GET show single service
+  - PUT update service
+  - DELETE delete service from database
