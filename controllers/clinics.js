@@ -127,13 +127,16 @@ exports.updateClinic = asyncHandler(async (req, res, next) => {
 // @route       DELETE /api/v1/clinics/:id
 // @access      Private
 exports.deleteClinic = asyncHandler(async (req, res, next) => {
-  const clinic = await Clinic.findByIdAndDelete(req.params.id);
+  const clinic = await Clinic.findById(req.params.id);
 
   if (!clinic) {
     return next(
       new ErrorResponse(`Resourse not found with id of ${req.params.id}`)
     );
   }
+
+  await clinic.deleteOne();
+
   res.status(200).json({ success: true, data: {} });
 });
 
