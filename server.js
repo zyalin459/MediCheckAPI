@@ -13,6 +13,7 @@ connectDB();
 
 // Route files
 const clinics = require("./routes/clinics");
+const services = require("./routes/services");
 
 const app = express();
 
@@ -27,6 +28,7 @@ if (process.env.NODE_ENV === "development") {
 
 // Moute routes
 app.use("/api/v1/clinics", clinics);
+app.use("/api/v1/services", services);
 
 app.use(errorHandler);
 

@@ -1,181 +1,110 @@
 [
   {
+    "_id": "6686293dcb0986c3384a149b",
     "service": "Primary Care",
     "description": "MemorialCare offers primary care to patients through family medicine, internal medicine, pediatrics, and urgent care at multiple locations throughout Southern California. MemorialCare Medical Group and Greater Newport Physicians MemorialCare are two of the many leading physician groups affiliated with MemorialCare.",
     "website": "https://www.memorialcare.org/services/primary-care",
     "insurance": true,
-    "Diagnostics": ["Pap Test", "Flu Shots", "Sports Physicals"],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a149c",
     "service": "Breast Care",
     "description": "MemorialCare Breast Centers are among the most comprehensive breast centers in Southern California. With locations in Orange and southern Los Angeles counties, MemorialCare Breast Centers are designated “Comprehensive Breast Imaging Centers” by the American College of Radiology, offering advanced technology for the highest quality breast imaging to ensure your wellness.",
     "website": "https://www.memorialcare.org/services/breast-care",
     "insurance": true,
-    "Diagnostics": [
-      "Ductogram / Ductogrophy",
-      "Breast Self-Examination",
-      "Mammograms / Digital Mammograms",
-      "Survivorship Resources",
-      "Community-Based Imaging Centers",
-      "Accelerated Partial Breast Irradiation (APBI)"
-    ],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a149d",
     "service": "Gynecological Care",
     "description": "The physicians are experienced in providing gynecological care throughout a woman's life-time. They specialize in treatments for gynecological disorders, including ovarian and cervical cancer, and non-surgical treatment options for uterine fibroids.",
     "website": "https://www.memorialcare.org/services/gynecological-care",
     "insurance": true,
-    "Diagnostics": [
-      "Gynecological Surgery",
-      "Hysterectomy",
-      "MonaLisa Touch",
-      "Myomectomy",
-      "Uterine Fibroid Embolization",
-      "vNOTES"
-    ],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a149e",
     "service": "Maternity Care",
     "description": "MemorialCare delivers more than 11,000 babies each year. Approximately 10 percent are high-risk births and high-risk multiples referred to MemorialCare Medical Centers throughout Los Angeles County and Orange County.",
     "website": "https://www.memorialcare.org/services/maternity-care",
     "insurance": true,
-    "Diagnostics": [
-      "Preconception Planning",
-      "Ultrasound",
-      "Breastfeeding & Lactation Support",
-      "Breastfeeding 101",
-      "Pre-Admission Forms"
-    ],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a149f",
     "service": "Pelvic Health Care",
     "description": "This program offers comprehensive treatment options for men and women with pelvic problems. Treatment options range from non-surgical treatments, such as medication, pelvic muscle rehabilitation and intravaginal devices to a wide spectrum of surgical procedures to help obtain the best results.",
     "website": "https://www.memorialcare.org/services/maternity-care",
     "insurance": true,
-    "Diagnostics": ["Surgery Care", "Condition Treatments"],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a0",
     "service": "Virtual Care",
     "description": "Have symptoms and not sure where to go? Use the symptom checker to guide you to the right level of care.",
     "website": "https://www.memorialcare.org/on-demand-care",
     "insurance": true,
-    "Diagnostics": [
-      "24/7 Video Visits",
-      "24/7 eVisits",
-      "MemorialCare Virtual Exam Kit",
-      "24/7 Urgent Care",
-      "Emergency Care"
-    ],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a1",
     "service": "Women's Heart Care",
     "description": "MemorialCare Heart and Vascular Institute specializes in minimally invasive heart procedures. With these innovative techniques, patients benefit from fewer complications, less scarring, greater comfort and faster recoveries. Distinguished as a leading heart and vascular institute.",
     "website": "https://www.memorialcare.org/services/heart-vascular-care",
     "insurance": true,
-    "Diagnostics": [
-      "Ankle-Brachial Index Test (ABI)",
-      "Angiogram",
-      "Electrophysiology Study (EPS)",
-      "Abdominal Ultrasound",
-      "Ambulatory Blood Pressure Monitoring (ABPM)",
-      "Digital Echocardiography"
-    ],
-    "clinic": "1",
+    "clinic": "5d713995b721c3bb38c1f5d0",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a2",
     "service": "Whole Health Journey",
     "description": "The Tia Whole Health Journey gives you multiple ways to address your physical and mental health. Review your health history and current needs, then follow up with a personalized visit that combines an annual exam and mental health check-in in one. It's a truly comprehensive care experience, with an exceptional team of clinicians to guide you along the way.",
     "website": "https://asktia.com/whole-health-journey",
     "insurance": true,
-    "Diagnostics": [
-      "Reproductive health",
-      "Genetic & faily history",
-      "Chronic stress",
-      "Personal & social wellness",
-      "Mental health",
-      "Exercise",
-      "Sleep",
-      "Metabolism",
-      "Nutrition"
-    ],
-    "clinic": "2",
+    "clinic": "5d713a66ec8f2b88b8f830b8",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a3",
     "service": "Gynecology",
     "description": "Sexual and reproductive health that's more comfortable and less judgmental. From routine Paps and surgeries to difficult-to-diagnose hormonal disorders, we deliver the highest quality gynecological care.",
     "website": "https://asktia.com/services/gynecology",
     "insurance": true,
-    "Diagnostics": [
-      "Fertility: Trying to Conceive",
-      "Cramps or Pelvic Pain",
-      "STI (aka STD) Testing",
-      "UTI",
-      "PCOS",
-      "Pap Test",
-      "Vaginal Infection",
-      "Pain with sex",
-      "Contraception Consult",
-      "Breast Concerns",
-      "Abortion"
-    ],
-    "clinic": "2",
+    "clinic": "5d713a66ec8f2b88b8f830b8",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a4",
     "service": "Primary Care",
     "description": "Tia treat your acute care needs, support chronic condition management, and facilitate referrals to top specialists when needed.",
     "website": "https://asktia.com/services/primary-care",
     "insurance": true,
-    "Diagnostics": [
-      "Flu shot",
-      "Immunity consult",
-      "Prescription refill",
-      "Headaches",
-      "Weight mangement",
-      "Blood work",
-      "Flu or cold",
-      "Sleep disturbances",
-      "Abdominal or digestive",
-      "Sinus infection",
-      "Acne, Rash, or Skin Change"
-    ],
-    "clinic": "2",
+    "clinic": "5d713a66ec8f2b88b8f830b8",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a5",
     "service": "Wellness",
     "description": "Tia's integrative approach to care incorporates evidence-based wellness modalities for both prevention and treatment of many common health conditions.",
     "website": "https://asktia.com/services/wellness",
     "insurance": false,
-    "Diagnostics": ["Acupuncture", "ACU x IUD"],
-    "clinic": "2",
+    "clinic": "5d713a66ec8f2b88b8f830b8",
     "user": "5d7a514b5d2c12c7449be045"
   },
   {
+    "_id": "6686293dcb0986c3384a14a6",
     "service": "Mental Health",
     "description": "Caring for the whole you includes your mental health because, let's face it, your mind, body, and emotions are all connected. Tia offers a variety of methods to help you reconnect and feel like your whole self again.",
     "website": "https://asktia.com/services/mental-health",
     "insurance": true,
-    "Diagnostics": [
-      "Mental Health Assessments",
-      "Support Groups",
-      "Acupuncture"
-    ],
-    "clinic": "2",
+    "clinic": "5d713a66ec8f2b88b8f830b8",
     "user": "5d7a514b5d2c12c7449be045"
   }
 ]

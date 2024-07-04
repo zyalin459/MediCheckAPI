@@ -63,7 +63,6 @@ const ClinicSchema = new mongoose.Schema(
       required: true,
       enum: [
         "Los Angeles Area",
-        "Los Angeles Area",
         "San Francisco",
         "New York",
         "Brroklyn",
@@ -91,10 +90,6 @@ const ClinicSchema = new mongoose.Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-    },
-    user: {
-      type: mongoose.Schema.ObjectId,
-      ref: "User",
     },
   },
   {
@@ -126,6 +121,25 @@ ClinicSchema.pre("save", async function (next) {
   // Do not save address in DB
   this.address = undefined;
   next();
+});
+
+// Cascade delete course when a clinic is deleted
+ClinicSchema.pre(
+  "deleteOne",
+  { document: true, query: false },
+  async function (next) {
+    console.log(`Services being removed from clinic ${this._id}`);
+    await this.model("Service").deleteMany({ clinic: this._id });
+    next();
+  }
+);
+
+// Reverse populate wth virtuals
+ClinicSchema.virtual("services", {
+  ref: "Service",
+  localField: "_id",
+  foreignField: "clinic",
+  justOne: false,
 });
 
 module.exports = mongoose.model("Clinic", ClinicSchema);
