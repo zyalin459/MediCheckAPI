@@ -20,3 +20,7 @@ A medical checkup packages management API. Inlcudes CRUD functionality of clinic
   - GET show single clinic, public
   - PUT Update clinic, private
   - DELETE Delete clinic, private
+- /api/v1/services
+  - GET services
+- /api/v1/clinics/:id/services
+  - GET show services for clinic of {id}
