@@ -6,6 +6,7 @@ const {
   updateClinic,
   deleteClinic,
   getClinicInRadius,
+  clinicUploadPhoto,
 } = require("../controllers/clinics");
 
 // Include other resource routes
@@ -17,6 +18,8 @@ const router = express.Router();
 router.use("/:clinicId/services", serviceRouter);
 
 router.route("/radius/:zipcode/:distance").get(getClinicInRadius);
+
+router.route("/:id/photo").put(clinicUploadPhoto);
 
 router.route("/").get(getClinics).post(createClinic);
 
