@@ -3,8 +3,9 @@ const express = require("express");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
 const colors = require("colors");
-const errorHandler = require("./middleware/error");
 const fileupload = require("express-fileupload");
+const errorHandler = require("./middleware/error");
+const cookieParser = require("cookie-parser");
 const connectDB = require("./config/db");
 
 // Load env vars
@@ -16,11 +17,15 @@ connectDB();
 // Route files
 const clinics = require("./routes/clinics");
 const services = require("./routes/services");
+const auth = require("./routes/auth");
 
 const app = express();
 
 // Middleware to parse JSON
 app.use(express.json());
+
+// Cookie parser
+app.use(cookieParser());
 
 // Middleware, routers below can access to it
 // Dev logging middleware
@@ -37,6 +42,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Moute routes
 app.use("/api/v1/clinics", clinics);
 app.use("/api/v1/services", services);
+app.use("/api/v1/auth", auth);
 
 app.use(errorHandler);
 
